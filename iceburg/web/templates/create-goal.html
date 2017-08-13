@@ -80,15 +80,78 @@
                     <tbody>
                       <tr>
                           <td style="text-align: center;">
-                            <img src="{{ url_for('static', filename='img/ticket.png') }}" style="max-width:50px;border: 1px solid #333;" /></td>
+                            <img src="{{ url_for('static', filename='img/ticket.png') }}" style="max-width:50px;" /></td>
                           <td style="text-align: center;">
-                            <img src="{{ url_for('static', filename='img/man.png') }}" style="max-width:50px;border: 1px solid #333;" /></td>
+                            <img src="{{ url_for('static', filename='img/man.png') }}" style="max-width:50px;" /></td>
                           <td style="text-align: center;">
-                            <img src="{{ url_for('static', filename='img/shop.png') }}" style="max-width:50px;border: 1px solid #333;"></td>
+                            <img src="{{ url_for('static', filename='img/shop.png') }}" style="max-width:50px;"></td>
                       </tr>
                     </tbody>
                   </table>
-                  <a href="#" class="btn btn-success pull-right btn-block">NEXT</a>
+                  <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a href="#tab_1" data-toggle="tab">Concert Ticket</a></li>
+                      <li><a href="#tab_2" data-toggle="tab">Shopping</a></li>
+                      <li><a href="#tab_3" data-toggle="tab">Scuba diving</a></li>
+
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="tab_1">
+                        <div class="form-group">
+                          <span>Peer Spending</span>
+                          <input class="form-control" type="text" value="$80 to $120" disabled/>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0px;">
+                          <span>How much would I need ?</span>
+                        </div>
+
+                        <div class="input-group">
+                          <span class="input-group-addon">$</span>
+                          <input type="text" class="form-control">
+                          <span class="input-group-addon">.00</span>
+                        </div>
+                      </div>
+                      <!-- /.tab-pane -->
+                      <div class="tab-pane" id="tab_2">
+                        <div class="tab-pane active" id="tab_1">
+                          <div class="form-group">
+                            <span>Peer Spending</span>
+                            <input class="form-control" type="text" value="$500 to $700" disabled/>
+                          </div>
+                          <div class="form-group" style="margin-bottom: 0px;">
+                            <span>How much would I need ?</span>
+                          </div>
+
+                          <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.tab-pane -->
+                      <div class="tab-pane" id="tab_3">
+                        <div class="tab-pane active" id="tab_1">
+                          <div class="form-group">
+                            <span>Peer Spending</span>
+                            <input class="form-control" type="text" value="$400 to $450" disabled/>
+                          </div>
+                          <div class="form-group" style="margin-bottom: 0px;">
+                            <span>How much would I need ?</span>
+                          </div>
+
+                          <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.tab-pane -->
+                    </div>
+                    <!-- /.tab-content -->
+                  </div>
+                    <a href="#" class="btn btn-success pull-right btn-block" style="margin-top:20px;">NEXT</a>
                 </div>
               </div>
 

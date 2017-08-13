@@ -124,6 +124,10 @@ def home():
 def createGoal():
     return render_template('create-goal.html', api_url=Config.API_URL)
 
+@app.route('/create-mission')
+def createMission():
+    return render_template('create-mission.html', api_url=Config.API_URL)
+
 g_session = None
 
 
