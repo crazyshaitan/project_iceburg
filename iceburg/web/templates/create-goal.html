@@ -65,10 +65,7 @@
             <div class="box-header with-border bg-gray">
               <h3 class="box-title">
                 <i class="fa fa-tag"></i>
-                <a target="_blank"
-                    href="#">
-                    <span style="font-size: 15px;"></span>
-                </a>
+                Create Goal
               </h3>
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse">
@@ -78,86 +75,21 @@
             </div> <!-- box heade ends -->
             <div class="box-body">
               <div class="row">
-
                 <div class="col-md-12 col-sm-12 less-padding">
-                  <table class="table table-responsive table-condensed" id="gaugeTable">
+                  <table class="table table-responsive">
                     <tbody>
                       <tr>
-                          <td><svg id="gauge-income" width="97%" height="70"></svg></td>
-                          <td><svg id="gauge-expense" width="97%" height="70"></svg></td>
-                          <td><svg id="gauge-saving" width="97%" height="70"></svg></td>
-                      </tr>
-                      <tr>
-                          <td><h4>Income</h4></td>
-                          <td><h4>Expense</h4></td>
-                          <td><h4>Saving</h4></td>
+                          <td style="text-align: center;">
+                            <img src="{{ url_for('static', filename='img/ticket.png') }}" style="max-width:50px;border: 1px solid #333;" /></td>
+                          <td style="text-align: center;">
+                            <img src="{{ url_for('static', filename='img/man.png') }}" style="max-width:50px;border: 1px solid #333;" /></td>
+                          <td style="text-align: center;">
+                            <img src="{{ url_for('static', filename='img/shop.png') }}" style="max-width:50px;border: 1px solid #333;"></td>
                       </tr>
                     </tbody>
                   </table>
+                  <a href="#" class="btn btn-success pull-right btn-block">NEXT</a>
                 </div>
-
-                <div class="col-md-12 col-sm-12">
-                  <div class="col-md-4">
-                    <p class="text-center">
-                      <h2><strong>Goal Completion</strong></h2>
-                    </p>
-
-                    <div style="padding-top: 10px;">
-                      <div style="float: left;margin-right:10px;">
-                        <img src="{{ url_for('static', filename='img/ticket.png') }}" style="max-width:50px;" />
-                      </div>
-                      <div>
-                        <div class="progress-group">
-                          <span class="progress-text">Justin Biber concert tickets</span>
-                          <span class="progress-number"><b>$80</b>/$100</span>
-
-                          <div class="progress sm">
-                            <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div style="padding-top: 10px;">
-                      <div style="float: left;margin-right:10px;">
-                        <img src="{{ url_for('static', filename='img/man.png') }}" style="max-width:50px;" />
-                      </div>
-                      <div>
-                        <!-- /.progress-group -->
-                        <div class="progress-group">
-                          <span class="progress-text">Scuba diving Lessons</span>
-                          <span class="progress-number"><b>$310</b>/$400</span>
-
-                          <div class="progress sm">
-                            <div class="progress-bar progress-bar-red" style="width: 50%"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div style="padding-top: 10px;">
-                      <div style="float: left;margin-right:10px;">
-                        <img src="{{ url_for('static', filename='img/shop.png') }}" style="max-width:50px;" />
-                      </div>
-                      <div>
-                        <!-- /.progress-group -->
-                        <div class="progress-group">
-                          <span class="progress-text">Buy iPhone 8</span>
-                          <span class="progress-number"><b>$480</b>/$1800</span>
-
-                          <div class="progress sm">
-                            <div class="progress-bar progress-bar-green" style="width: 50%"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div> <!--col end -->
-
               </div>
 
             </div> <!-- box body end -->
@@ -189,30 +121,6 @@
 <!--<script src="{{ url_for('static', filename='bower_components/jquery-smilscroll/jquery.slimscroll.min.js') }}"></script> -->
 <script>
 $(document).ready(function() {
-  var saving = 14442.0;
-  var income= 56759.0;
-  var expense = 42317.0;
-var config = liquidFillGaugeDefaultSettings();
-      config.textColor = "#FF4444";
-      config.waveTextColor = "#000";
-      config.circleThickness = 0.2;
-      config.textVertPosition = 0.2;
-      config.waveAnimateTime = 1000;
-      config.circleColor = "#00a65a";
-      config.waveColor = "#52cc94";
-      config.minValue = 20000;
-      config.maxValue = 60000;
-      config.displayPercent = false;
-      var gauge = loadLiquidFillGauge("gauge-saving", saving,config);
-
-      config.circleColor = "#f39c12";
-      config.waveColor = "#ffdea9";
-      var gauge = loadLiquidFillGauge("gauge-income", income,config);
-
-      config.circleColor = "#FF7777";
-      config.waveColor = "#FFDDDD";
-      var gauge = loadLiquidFillGauge("gauge-expense", expense,config);
-
 
 
 

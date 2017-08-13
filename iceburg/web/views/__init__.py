@@ -120,6 +120,10 @@ def login():
 def home():
     return render_template('home.html', api_url=Config.API_URL)
 
+@app.route('/create-goal')
+def createGoal():
+    return render_template('create-goal.html', api_url=Config.API_URL)
+
 g_session = None
 
 
